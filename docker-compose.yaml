@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    restart: always
+    image: employee_manager:latest
+    build:
+      context: .
+    ports:
+      - "9000:8080"
+    env_file:
+      - .env
+    networks:
+      - localnet
+    depends_on:
+      - appdb
+  appdb:
+    image: mysql:8.4.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=123qwe
+      - MYSQL_DATABASE=supportportal
+    ports:
+      - "3307:3306"
+    networks:
+      - localnet
+
+
+networks:
+  localnet:
+    driver: bridge
