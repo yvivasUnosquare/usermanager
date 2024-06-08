@@ -5,6 +5,7 @@ I adapted the code and dockerize the application adding one container for the BD
 Simple run in the base ditrectory
 ```docker compose up```
 # How to test it
-In the main folder there is a file  https://github.com/yvivasUnosquare/usermanager/blob/main/src/main/Angular.postman_collection.json"Angular.postman_collection.json" that can be imported to postman to test the backed individually
-Link 
+In the main folder there is a file  "Angular.postman_collection.json" that can be imported to postman to test the backed individually
+Link
+---
 https://github.com/yvivasUnosquare/usermanager/blob/main/src/main/Angular.postman_collection.json
