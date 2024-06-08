@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "af088d45-bf1a-468f-a958-13d6abf440c1",
+		"name": "Angular",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2923866"
+	},
+	"item": [
+		{
+			"name": "get  employee by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/employee/find/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employee",
+						"find",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/employee/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Clark Kent\",\n    \"email\": \"superman@gmail.com\",\n    \"jobTitle\": \"Manager\",\n    \"phone\": \"+18642336333\",\n    \"imageUrl\": \"https://picsum.photos/777/333\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/employee/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/employee/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"name\": \"Clark S Kent\",\n    \"email\": \"superman@gmail.com\",\n    \"jobTitle\": \"Manager\",\n    \"phone\": \"+18642336333\",\n    \"imageUrl\": \"https://picsum.photos/777/333\",\n    \"employeeCode\": \"6705b8ed-3b44-4486-9d0e-7927759309f6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/employee/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"employee",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
